@@ -41,7 +41,7 @@ First, the custom action:
 Note that in these examples I used "adb -d" to send to the connected device; you would use "adb -e"
 to send to an emulator.
 
-## Implementing the integration
+#### Implementing the integration
 
 Just 3 lines of code does the job:
 
@@ -51,3 +51,7 @@ Just 3 lines of code does the job:
     
 If you implement this integration, please let me know at team@shushapp.com, including the version
 of your app that includes it.  I thank you, but more importantly, so do our mutual users :-)
+
+####P.S.
+If your app has similar undesired interactions with other apps like Shush, obviously those other apps could implement a
+BroadcastReciever that handles the same intent action.
